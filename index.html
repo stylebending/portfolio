@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Washik Minasian - Web Developer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #e8e8e8;
+      background: #0f172a;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #f1f5f9;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      font-size: 1.1em;
+      line-height: 1.8;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .links a:hover {
+      color: #93c5fd;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #f1f5f9;
+      border-bottom: 2px solid #334155;
+      padding-bottom: 10px;
+    }
+
+    .project {
+      background: #1e293b;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+
+    .project:hover {
+      box-shadow: 0 4px 16px rgba(96, 165, 250, 0.1);
+      border-color: #475569;
+    }
+
+    .project h3 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      color: #f1f5f9;
+    }
+
+    .project-meta {
+      color: #94a3b8;
+      font-size: 0.9em;
+      margin-bottom: 15px;
+    }
+
+    .project p {
+      color: #cbd5e1;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .project-links a {
+      color: #60a5fa;
+      text-decoration: none;
+      font-size: 0.95em;
+      font-weight: 500;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tech-tag {
+      background: #334155;
+      padding: 5px 12px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      color: #cbd5e1;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .skill-category h3 {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #f1f5f9;
+    }
+
+    .skill-category ul {
+      list-style: none;
+    }
+
+    .skill-category li {
+      padding: 5px 0;
+      color: #cbd5e1;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 30px;
+      border-top: 1px solid #334155;
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .container {
+        padding: 40px 20px;
+      }
+
+      .project {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Washik Minasian</h1>
+      <p class="subtitle">Web Developer</p>
+      <p class="bio">
+        Hoi, ik ben een web developer met ruime ervaring als freelancer met variërende webapplicaties. Expertise in PHP,
+        JavaScript, CSS en frameworks zoals Laravel, Symfony, Tailwind CSS, Vue.js en meer. Creatief en
+        oplossingsgericht met een passie voor technologie.
+      </p>
+      <div class="links">
+        <a href="https://github.com/stylebending" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/washik-minasian-648198167" target="_blank">LinkedIn</a>
+        <a href="mailto:washikmin@gmail.com">Email</a>
+      </div>
+    </header>
+
+    <section id="projects">
+      <h2>Projecten</h2>
+
+      <div class="project">
+        <h3>AutoCounter</h3>
+        <p class="project-meta">2021</p>
+        <p>
+          AutoCounter is een inventarisatie / administratie / boekhouding tool voor auto dealers en garages. Deze webapp
+          versimpelt de administratie en boekhouding en zet alles op een rijtje in een PDF download. Gemaakt met het
+          Laravel PHP framework.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Laravel</span>
+          <span class="tech-tag">Vue.js</span>
+          <span class="tech-tag">Bootstrap</span>
+          <span class="tech-tag">MySQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://autocounter.nl" target="_blank">Bekijk webapp →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>CalculatedTrading</h3>
+        <p class="project-meta">2024</p>
+        <p>
+          CalculatedTrading is een trading interface die het process van het
+          invoeren en managen van een trade versimpelt en tegelijkertijd uitbreidt. De webapp zorgt ervoor dat alle
+          handelingen van tevoren in te stellen zijn op een (voor traders) duidelijke manier. Gebruikers kunnen hun
+          account verbinden aan een exchange via een API key. Deze wordt gebruikt om alle handelingen uit te voeren.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">DaisyUI</span>
+          <span class="tech-tag">jQuery</span>
+          <span class="tech-tag">SQLite</span>
+          <span class="tech-tag">APIs (REST/WS)</span>
+          <span class="tech-tag">VPS (Ubuntu/NGINX)</span>
+          <span class="tech-tag">PWA</span>
+        </div>
+        <div class="project-links">
+          <a href="https://calculatedtrading.com" target="_blank">Bekijk webapp →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>FredHelgers2Wielers</h3>
+        <p class="project-meta">2025</p>
+        <p>
+          Voor dit project waren specifieke eisen gesteld voor welke producten werden opgehaald
+          en hoe ze werden getoond. Dit moest via het kassasysteem dat in de winkel wordt gebruikt, zodat producten in
+          kunnen worden gescand en alle informatie direct op de website beschikbaar is.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">Bootstrap</span>
+          <span class="tech-tag">APIs (REST)</span>
+        </div>
+        <div class="project-links">
+          <a href="https://fredhelgers2wielers.nl" target="_blank">Bekijk website →</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3>Nederdrank</h3>
+        <p class="project-meta">2025</p>
+        <p>
+          Nederdrank is een webshop waar nog aan wordt gewerkt, gemaakt met Woocommerce. Dit project staat hiertussen
+          omdat het erg verschilt van mijn andere projecten en mijn gerbuikelijke werkwijze.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Wordpress</span>
+          <span class="tech-tag">Woocommerce</span>
+        </div>
+        <div class="project-links">
+          <a href="https://nederdrank.com" target="_blank">Bekijk webshop →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Vaardigheden</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+            <li>Vue.js</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>PHP</li>
+            <li>APIs (REST/WS)</li>
+            <li>SQL</li>
+            <li>Laravel</li>
+            <li>Symfony</li>
+            <li>Wordpress/Woocommerce</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Anders</h3>
+          <ul>
+            <li>Git</li>
+            <li>VPS</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Washik Minasian. Gemaakt met HTML & CSS.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
