@@ -79,10 +79,21 @@
       padding-bottom: 10px;
     }
 
+.projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+
+    @media (min-width: 600px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     .project {
       background: #1e293b;
       padding: 30px;
-      margin-bottom: 25px;
       border-radius: 8px;
       border: 1px solid #334155;
       transition: box-shadow 0.3s, border-color 0.3s;
@@ -194,21 +205,37 @@
       <h1>Washik Minasian</h1>
       <p class="subtitle">Web Developer</p>
       <p class="bio">
-        Hoi, ik ben een web developer met ruime ervaring als freelancer met variërende webapplicaties. Expertise in PHP,
+        Hallo, ik ben een web developer met ruime ervaring als freelancer met variërende webapplicaties. Expertise in PHP,
         JavaScript, CSS en frameworks zoals Laravel, Symfony, Tailwind CSS, Vue.js en meer. Creatief en
-        oplossingsgericht met een passie voor technologie.
+        oplossingsgericht met een passie voor technologie. Recentelijk ben ik ook begonnen met het maken van cli tools voor Windows in Rust.
       </p>
       <div class="links">
         <a href="https://github.com/stylebending" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/washik-minasian-648198167" target="_blank">LinkedIn</a>
         <a href="mailto:washikmin@gmail.com">Email</a>
       </div>
     </header>
 
-    <section id="projects">
+<section id="projects">
       <h2>Projecten</h2>
 
+      <div class="projects-grid">
+
       <div class="project">
+        <h3>Aperture</h3>
+        <p class="project-meta">2026</p>
+        <p>
+            Aperture is een diagnostiek tui tool voor Windows 10/11 gemaakt in Rust. Vind welke processen een bestand locken of scan een folder hiervoor. Inclusief process manager, service manager, netwerk monitor, met zoek en filter opties. Navigeer gemakkelijk met Vim key bindings die context bewust zijn.
+        </p>
+        <div class="tech-stack">
+          <span class="tech-tag">Rust</span>
+          <span class="tech-tag">Windows API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/stylebending/Aperture" target="_blank">Bekijk op GitHub →</a>
+        </div>
+      </div>
+
+        <div class="project">
         <h3>WinEventEngine</h3>
         <p class="project-meta">2026</p>
         <p>
@@ -220,7 +247,7 @@
           <span class="tech-tag">Windows API</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/stylebending/win_event_engine" target="_blank">Bekijk op GitHub →</a>
+          <a href="https://github.com/stylebending/WinEventEngine" target="_blank">Bekijk op GitHub →</a>
         </div>
       </div>
 
